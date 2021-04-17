@@ -1,0 +1,59 @@
+<!-- Coronavirus COVID-19 Statistics API Based on public data by Johns Hopkins CSSE. It includes search by 
+    country, province, and date. Returns diff for confirmed, deaths, and recovered, compared with the previous day.
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Covid-19 Stats API Demo</title>
+    <style>
+        .stats-container
+        {
+            margin: 2%;
+            padding-left:2%;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            display:flex;
+            flex-direction:column;
+            width:50%;
+            border: 1px solid gray;
+        }
+        p
+        {
+            font-weight:bold;
+            line-height:2em;
+            color:red;
+        }
+        small
+        {
+            font-style:italic;
+            font-size: 0.75em;
+        }
+        img
+        {
+            padding-bottom:2%;
+        }
+    </style>
+</head>
+<body>
+    <div class="stats-container">
+        <img src="covidbanner.png" alt="Covid 19 banner">
+
+        <div id="date"></div>
+        <div id="last_update"></div>
+        <div id="active"></div>
+        <div id="confirmed"></div>
+        <div id="deaths"></div>
+        <div id="fatality_rate"></div>
+        <div id="recovered"></div>
+        <br />
+        <p>Wear a mask!</p>
+        <small>COVID-19 Statistics API | Data pulled from Johns Hopkins University</small>
+    </div>
+
+      <script src="covidstatsdemo.js" type="module"></script>
+</body>
+
+</html>
