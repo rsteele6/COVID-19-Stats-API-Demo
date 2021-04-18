@@ -10,9 +10,7 @@ fetch("https://covid-19-statistics.p.rapidapi.com/reports/total?", {
 .then(response => response.json())
 .then(response => {
 	console.log(response);
-	console.log(response.data);
 
-	document.getElementById('date').innerHTML = 'Date: ' + response.data.date;
 	document.getElementById('last_update').innerHTML = '\n' + 'Last Update: ' + response.data.last_update;
 	document.getElementById('active').innerHTML = '\n' + 'Active Cases: ' + response.data.active.toLocaleString('en-US', {useGrouping:true});
 	document.getElementById('confirmed').innerHTML = '\n' + 'Confirmed Cases: ' + response.data.confirmed.toLocaleString('en-US', {useGrouping:true});
